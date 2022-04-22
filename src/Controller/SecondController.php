@@ -18,10 +18,10 @@ class SecondController extends AbstractController
     )]
     public function index($name, $age, Request $request): Response
     {
-        if ($age % 3 ===0) {
+        if ($age % 3 === 0) {
             $this->addFlash('success', 'cc success');
         }
-        if ($age % 2 ===0) {
+        if ($age % 2 === 0) {
             $this->addFlash('info', 'cc info');
         }
         dump($request);
